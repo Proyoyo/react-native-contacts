@@ -132,7 +132,7 @@ withCallback:(RCTResponseSenderBlock) callback
     [phoneNumbers addObject:phone];
   }
 
-  [contact setObject: phoneNumbers forKey:@"phoneNumbers"];
+  //[contact setObject: phoneNumbers forKey:@"phoneNumbers"];
   //end phone numbers
 
   //handle emails
@@ -159,7 +159,7 @@ withCallback:(RCTResponseSenderBlock) callback
 
   [contact setObject: emailAddreses forKey:@"emailAddresses"];
 
-  [contact setObject: [self getABPersonThumbnailFilepath:person] forKey:@"thumbnailPath"];
+  //[contact setObject: [self getABPersonThumbnailFilepath:person] forKey:@"thumbnailPath"];
 
   return contact;
 }
